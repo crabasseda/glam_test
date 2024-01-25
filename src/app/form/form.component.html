@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glam test</title>
+</head>
+<body>
+
+  <header class="header">
+    <h2>Formulari de tasques</h2>
+  </header>
+
+  <main class="container">
+    <form (submit)="post_task($event)">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <br>
+      
+        <label for="customer">Client:</label>
+        <input type="text" id="customer" name="customer" required>
+      
+        <br>
+      
+        <label for="description">Descripció:</label>
+        <textarea id="description" name="description"></textarea>
+      
+        <br>
+      
+        <button type="submit">Enviar</button>
+      </form>
+      
+  </main>
+
+
+</body>
+</html>

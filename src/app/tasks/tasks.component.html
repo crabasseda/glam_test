@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glam test</title>
+</head>
+<body>
+
+  <header class="header">
+    <h2>Llistat de tasques</h2>
+  </header>
+  
+  <main class="container" *ngIf="tasks.length > 0">
+      <div *ngFor="let task of tasks">
+        <div class="card">
+          <h3>{{ task.name }}</h3>
+          <p>Descripció: {{ task.description }}</p>
+          <p>Client: {{ task.customer }}</p>
+        </div>
+      </div>
+  </main>
+</body>
+</html>
+

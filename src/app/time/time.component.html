@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glam test</title>
+</head>
+<body>
+
+  <header class="header">
+    <h2>Llistat de temps</h2>
+  </header>
+  
+  <main class="container" *ngIf="tasksTime.length > 0">
+      <div *ngFor="let task of tasksTime">
+        <div class="card" [class.selected]="task === selectedTask" (click)="selectTask(task)">
+          <p>Temps: {{ task.spent_time}}</p>
+          <p>Data començament: {{ task.begin_date }}</p>
+          <p>Descripció: {{ task.description }}</p>
+          <p>Data final: {{ task.end_date }}</p>
+        </div>
+      </div>
+      
+      <div *ngIf="selectedTask">
+        <label for="editSpentTime">Editar Temps:</label>
+        <input type="text" id="editSpentTime" #editSpendTime >
+        <button (click)="editSpentTime()">Guardar</button>
+      </div>
+
+  </main>
+</body>
+</html>
+

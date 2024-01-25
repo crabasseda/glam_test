@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    margin: 0 auto;
+  }
+  
+  .header {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  /* Ejemplo de estilos para un botón */
+  ul li{
+
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6484a7;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 1%;
+  }
+
+  ul li a{
+    color:white;
+    text-decoration: none;
+
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
